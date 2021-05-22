@@ -52,9 +52,10 @@ body {
   }
   .card-content {
     grid-area: col2;
-    width: 100%;
-    padding: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1 {
       color: $color-white;
       margin-bottom: 30px;
@@ -73,12 +74,13 @@ body {
       list-style: none;
       li {
         display: flex;
-        font-size: 15px;
-        line-height: 1.8;
+        font-size: 18px;
+        line-height: 2;
         color: $color-white-75;
         flex-direction: column;
         span {
-          font-size: 20px;
+          font-size: 24px;
+          color: $color-white;
         }
       }
     }
@@ -96,12 +98,11 @@ body {
       }
     }
     .card-content {
+      text-align: left;
+      padding: 80px;
       ul {
         display: flex;
-        justify-content: center;
-        li {
-          margin-left: 20px;
-        }
+        justify-content: space-between;
       }
     }
   }
