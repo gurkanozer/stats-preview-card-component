@@ -21,13 +21,13 @@ body {
   width: 100%;
   padding: 20px;
 }
+
 /**CARD*/
 .card {
   max-width: 654px; //image size for desktops is 540x446 - mobile size 654x480
   width: 100%;
   border-radius: 10px;
   background-color: $color-desaturated-blue;
-
   margin-top: 50px;
   overflow: hidden;
   display: grid;
@@ -52,11 +52,13 @@ body {
   }
   .card-content {
     grid-area: col2;
+    flex-direction: column;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    padding: 40px;
     justify-content: center;
     h1 {
+      font-family: $font-lexend-deca;
       color: $color-white;
       margin-bottom: 30px;
       span {
@@ -67,7 +69,7 @@ body {
       color: $color-white-75;
       margin-bottom: 30px;
       line-height: 1.6;
-      font-family: $font-lexend-deca;
+      font-family: $font-inter;
       font-size: 15px;
     }
     ul {
@@ -75,9 +77,10 @@ body {
       li {
         display: flex;
         font-size: 18px;
-        line-height: 2;
         color: $color-white-75;
+        font-family: $font-lexend-deca;
         flex-direction: column;
+        padding-bottom: 15px;
         span {
           font-size: 24px;
           color: $color-white;
@@ -103,6 +106,9 @@ body {
       ul {
         display: flex;
         justify-content: space-between;
+        li {
+          line-height: 2;
+        }
       }
     }
   }
